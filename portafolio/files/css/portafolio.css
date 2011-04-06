@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url(../img/tropical.jpg) center center;
+    background-attachment:fixed;
+}
+.wrapper{
+    width: 1002px;    
+    margin: 0 auto;              
+}
+.header{
+    position: fixed;
+    height: 125px;
+    width: 1002px;
+    top: 0;
+    z-index: 2;    
+}
+.menu{
+    height: 48px;
+    background: url('../img/menu-back.png') repeat-x;    
+    width: 1002px;
+    font-family: "Trebuchet MS", "Verdana", sans-serif;
+    margin-bottom: 10px;
+}
+.menu a{
+    display: block;
+    float: left;
+    width: 250px;
+    height: 48px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: orange;
+}
+.freidell{
+    width: 301px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.separador{
+    background: url('../img/separador.png') repeat-x;
+    width: 990px;
+    height: 4px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.clean{
+    clear: both;
+}
+.content{            
+    position: relative;
+    top: 125px;
+    z-index: 1;
+    height: 768px;
+}
+.galeria{
+    margin: 0 auto;
+    width: 1002px;
+}
+.thumb{
+    height: 228px;
+    width: 200px;
+    background: url(../img/thumb-back.png) repeat;
+    border: 1px #000 solid;
+    float: left;
+    margin: 10px 20px 10px 25px;
+}
