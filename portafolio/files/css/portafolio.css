@@ -1,31 +1,45 @@
 body{
     padding: 0;
     margin: 0;
-    background: url(../img/tropical.jpg) center center;
+    background: #000;
     background-attachment:fixed;
+    color: #fff;
 }
-.wrapper{
-    width: 1002px;    
+a{
+    outline: none;
+}
+.wrapper{    
     margin: 0 auto;              
 }
 .header{
     position: fixed;
-    height: 125px;
-    width: 1002px;
+    height: 50px;
+    width: 100%;
     top: 0;
     z-index: 2;    
 }
 .menu{
     height: 48px;
-    background: url('../img/menu-back.png') repeat-x;    
-    width: 1002px;
+    background: url('../img/menu-back.png') repeat-x;        
     font-family: "Trebuchet MS", "Verdana", sans-serif;
     margin-bottom: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+.links{
+    width: 1002px;
+    margin: 0 auto;
+    font-family: "Trebuchet MS", "Verdana", sans-serif;
+    font-size: 12px;
+    text-align: justify;
+}
+.links span{
+    color: #afdde9;
 }
 .menu a{
     display: block;
     float: left;
-    width: 250px;
+    width: 200px;
     height: 48px;
     color: #fff;
     font-size: 14px;
@@ -33,8 +47,8 @@ body{
     text-align: center;
     text-decoration: none;
 }
-.menu a:hover{
-    color: orange;
+.menu a:hover, .activo{
+    color: orange !important;
 }
 .freidell{
     width: 301px;
@@ -43,7 +57,7 @@ body{
 }
 .separador{
     background: url('../img/separador.png') repeat-x;
-    width: 990px;
+    width: 100%;
     height: 4px;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -53,13 +67,16 @@ body{
 }
 .content{            
     position: relative;
-    top: 125px;
+    top: 50px;
     z-index: 1;
     height: 768px;
 }
 .galeria{
     margin: 0 auto;
     width: 1002px;
+    height: 668px;    
+    margin-top: 15px;
+    background: url(../img/fondo1.jpg) repeat;
 }
 .thumb{
     height: 228px;
@@ -68,4 +85,37 @@ body{
     border: 1px #000 solid;
     float: left;
     margin: 10px 20px 10px 25px;
+}
+.circo{
+    display: block;
+    height: 560px;
+    width: 501px;
+    background: url(../img/fondo-test2.png) no-repeat;
+    text-indent: -9999px;
+    float: left;
+}
+.circo:hover{
+    background-position: 0px -560px;
+}
+.varias{
+    float: left;
+    display: block;
+    height: 560px;
+    width: 501px;
+    background: url(../img/fondo-test2.png) no-repeat -501px 0px;
+    text-indent: -9999px;
+}
+.varias:hover{
+    background-position: -501px -560px;
+}
+.bio-img{
+    float: left;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+.contacto-img{
+    float: right;
+    margin-right: 300px;
+    margin-top: -130px;
+    padding-bottom: 30px;
 }
